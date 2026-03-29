@@ -1,0 +1,147 @@
+export interface Product {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  image: string;
+  description: string;
+  rating: number;
+  sizes: string[];
+  colors: string[];
+  isHot?: boolean;
+  gender: "men" | "women" | "children";
+  height: "low" | "mid" | "high";
+  collection?: string;
+  sport?: string;
+  characteristics: string[];
+}
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "Classic White Sneakers",
+    category: "Sneakers",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1756707235708-01aa79b8bf51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHNuZWFrZXJzJTIwcHJvZHVjdCUyMHBob3RvZ3JhcGh5fGVufDF8fHx8MTc3MzMyMjYyMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Timeless white sneakers perfect for everyday wear. Combines comfort with classic style.",
+    rating: 4.8,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    colors: ["White", "Off-White"],
+    isHot: true,
+    gender: "men",
+    height: "low",
+    collection: "Classic",
+    characteristics: ["Breathable", "Lightweight", "Versatile"],
+  },
+  {
+    id: "2",
+    name: "Performance Running Shoes",
+    category: "Running",
+    price: 129.99,
+    image: "https://images.unsplash.com/photo-1765914448113-ebf0ce8cb918?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwc2hvZXMlMjBhdGhsZXRpY3xlbnwxfHx8fDE3NzMyMTgxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Advanced cushioning technology for maximum comfort during your runs.",
+    rating: 4.9,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    colors: ["Blue", "Black", "Red"],
+    isHot: true,
+    gender: "women",
+    height: "low",
+    sport: "Running",
+    characteristics: ["Cushioned", "Shock Absorbing", "Durable"],
+  },
+  {
+    id: "3",
+    name: "Premium Leather Boots",
+    category: "Boots",
+    price: 199.99,
+    image: "https://images.unsplash.com/photo-1652474590303-b4d72bf9f61a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWF0aGVyJTIwYm9vdHMlMjBmYXNoaW9ufGVufDF8fHx8MTc3MzMyNjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Handcrafted leather boots that combine durability with sophisticated style.",
+    rating: 4.7,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    colors: ["Brown", "Black", "Tan"],
+    isHot: true,
+    gender: "men",
+    height: "high",
+    collection: "Premium",
+    characteristics: ["Waterproof", "Premium Leather", "Comfortable"],
+  },
+  {
+    id: "4",
+    name: "Casual Canvas Shoes",
+    category: "Casual",
+    price: 59.99,
+    image: "https://images.unsplash.com/photo-1758646483134-1a5cbc9aa349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXN1YWwlMjBjYW52YXMlMjBzaG9lc3xlbnwxfHx8fDE3NzMyNDEyODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Lightweight canvas shoes perfect for casual outings and everyday comfort.",
+    rating: 4.5,
+    sizes: ["6", "7", "8", "9", "10", "11"],
+    colors: ["Navy", "Gray", "Beige"],
+    isHot: true,
+    gender: "children",
+    height: "low",
+    collection: "Summer",
+    characteristics: ["Lightweight", "Breathable", "Flexible"],
+  },
+  {
+    id: "5",
+    name: "High-Top Sneakers",
+    category: "Sneakers",
+    price: 109.99,
+    image: "https://images.unsplash.com/photo-1581000197533-d6e5083b3201?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoaWdoJTIwdG9wJTIwc25lYWtlcnN8ZW58MXx8fHwxNzczMjkzNjMzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Stylish high-top sneakers with excellent ankle support and urban appeal.",
+    rating: 4.6,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    colors: ["Black", "White", "Red"],
+    isHot: true,
+    gender: "women",
+    height: "high",
+    collection: "Urban",
+    sport: "Basketball",
+    characteristics: ["Ankle Support", "Stylish", "Durable"],
+  },
+  {
+    id: "6",
+    name: "Minimalist Modern Shoes",
+    category: "Casual",
+    price: 79.99,
+    image: "https://images.unsplash.com/photo-1736555142217-916540c7f1b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwc2hvZXMlMjBtb2Rlcm58ZW58MXx8fHwxNzczMzI2ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Clean, minimalist design for those who appreciate subtle elegance.",
+    rating: 4.7,
+    sizes: ["7", "8", "9", "10", "11"],
+    colors: ["White", "Black", "Gray"],
+    isHot: true,
+    gender: "men",
+    height: "low",
+    collection: "Minimalist",
+    characteristics: ["Sleek Design", "Comfortable", "Versatile"],
+  },
+  {
+    id: "7",
+    name: "Vibrant Sports Sneakers",
+    category: "Sports",
+    price: 99.99,
+    image: "https://images.unsplash.com/photo-1761244698434-9510e77b88c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHNuZWFrZXJzJTIwdmlicmFudHxlbnwxfHx8fDE3NzMzMjY4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Bold and colorful sneakers that make a statement on and off the court.",
+    rating: 4.8,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    colors: ["Multi", "Blue", "Orange"],
+    gender: "children",
+    height: "mid",
+    sport: "Training",
+    characteristics: ["Colorful", "Energetic", "Comfortable"],
+  },
+  {
+    id: "8",
+    name: "Luxury Dress Shoes",
+    category: "Formal",
+    price: 249.99,
+    image: "https://images.unsplash.com/photo-1760331339913-da9637154477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkcmVzcyUyMHNob2VzfGVufDF8fHx8MTc3MzI1NjY4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    description: "Elegant dress shoes crafted from premium materials for special occasions.",
+    rating: 4.9,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    colors: ["Black", "Brown"],
+    gender: "men",
+    height: "low",
+    collection: "Luxury",
+    characteristics: ["Premium Leather", "Elegant", "Handcrafted"],
+  },
+];
